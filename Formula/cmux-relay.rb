@@ -1,15 +1,15 @@
 class CmuxRelay < Formula
   desc "Connects the cmux Android app to cmux on this Mac"
   homepage "https://github.com/gantoine/cmux-android"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/gantoine/cmux-android/releases/download/0.1.0/cmux-relay-0.1.0-darwin-arm64.tar.gz"
-    sha256 "f791fbc8deb00c24f4ce236c3f82a5bbd400feca54288a5709f9fff168dcfd12"
+    url "https://github.com/gantoine/cmux-android/releases/download/0.2.0/cmux-relay-0.2.0-darwin-arm64.tar.gz"
+    sha256 "534b5cf891c4660ae9818d054dd1e726a5a143ceb6741409f441ca503790b16a"
   else
-    url "https://github.com/gantoine/cmux-android/releases/download/0.1.0/cmux-relay-0.1.0-darwin-amd64.tar.gz"
-    sha256 "4b02db6b6d5b851befa7caecd1cbec112519c9a84004b00e11d0f68d6adfd3cb"
+    url "https://github.com/gantoine/cmux-android/releases/download/0.2.0/cmux-relay-0.2.0-darwin-amd64.tar.gz"
+    sha256 "22dd02cad65f505a33f8199bc139a5873779c9d4019712dda7621412402b2760"
   end
 
   depends_on :macos
