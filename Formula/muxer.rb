@@ -1,15 +1,15 @@
 class Muxer < Formula
   desc "Connects the Muxer Android app to cmux on this Mac"
   homepage "https://github.com/gantoine/muxer"
-  version "0.3.1"
+  version "0.4.0"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/gantoine/muxer/releases/download/0.3.1/muxer-0.3.1-darwin-arm64.tar.gz"
-    sha256 "cdc1ba0ea8a5c2ccb667d5fdb2303129b766a386b047c79ba7c9ad6f823e3623"
+    url "https://github.com/gantoine/muxer/releases/download/0.4.0/muxer-0.4.0-darwin-arm64.tar.gz"
+    sha256 "1fde10e728982f604b776df722197b38e5a045b39676fba462b697dcf9d829d2"
   else
-    url "https://github.com/gantoine/muxer/releases/download/0.3.1/muxer-0.3.1-darwin-amd64.tar.gz"
-    sha256 "30907202da5ce28a4c14c596c7cba1426dee3a83502bd128b3469f1daf8232f9"
+    url "https://github.com/gantoine/muxer/releases/download/0.4.0/muxer-0.4.0-darwin-amd64.tar.gz"
+    sha256 "b03b2a2e0742dd343ac7982814834e286830bb2b8602cd7e078863a92cc8c0ee"
   end
 
   depends_on :macos
@@ -22,7 +22,7 @@ class Muxer < Formula
     <<~EOS
       Set up the relay:
         muxer install
-        tailscale serve --bg --https=8765 http://127.0.0.1:8765
+        tailscale serve --bg --https=8765 http://127.0.0.1:8765   # or another HTTPS proxy, see the README
         muxer doctor
         muxer pair
 
