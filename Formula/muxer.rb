@@ -1,15 +1,15 @@
 class Muxer < Formula
   desc "Connects the Muxer Android app to cmux on this Mac"
   homepage "https://github.com/gantoine/muxer"
-  version "0.5.0"
+  version "0.6.0"
   license "MIT"
 
   if Hardware::CPU.arm?
-    url "https://github.com/gantoine/muxer/releases/download/0.5.0/muxer-0.5.0-darwin-arm64.tar.gz"
-    sha256 "e18a99923eb0a189bf793d8c59ce9285aec08e703e59760cdaab48b95b50237a"
+    url "https://github.com/gantoine/muxer/releases/download/0.6.0/muxer-0.6.0-darwin-arm64.tar.gz"
+    sha256 "415f385b225c2619c58423550b7e89bde193c84059196991769f1c0167bd6dad"
   else
-    url "https://github.com/gantoine/muxer/releases/download/0.5.0/muxer-0.5.0-darwin-amd64.tar.gz"
-    sha256 "ea669a02a2e096011e083173a0099f5fd2f95e393a662deb1709395e29239ba9"
+    url "https://github.com/gantoine/muxer/releases/download/0.6.0/muxer-0.6.0-darwin-amd64.tar.gz"
+    sha256 "0bc23f3dd84e6cb8c790c3bbfebf5f7630d72c2aa6d03f35ccbea612d0fc5d8a"
   end
 
   depends_on :macos
